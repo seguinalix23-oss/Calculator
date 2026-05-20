@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : orange;
+    text-decoration: bold ;
+}
+
+#calcultr {
+    width : 350px;
+    height : 350px;
+}
+
+#screen{
+    width : 200px ;
+    height : 40px;
+}
+.butNum{ 
+    border: 2px solid black;
+    table-layout : auto;
+}
+
