@@ -1,20 +1,68 @@
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color : orange;
-    text-decoration: bold ;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
 }
+
+
+
+/* Modifie le calcul des tailles pour inclure les bordures dans les dimensions */
+
+html {
+    box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
 
 #calcultr {
-    width : 350px;
-    height : 350px;
+    width: 410px; /* Légèrement ajusté pour absorber les bordures sans déformer */
+    height: 610px;
+    border: 5px solid black;
+    border-collapse: collapse;
+    background-color: orangered;
+    margin: 20px auto; /* Centre la calculatrice à l'écran */
 }
 
-#screen{
-    width : 200px ;
-    height : 40px;
+
+
+#screen {
+    width: 400px;
+    height: 100px;
+    background-color: lightgrey;
+    font-family: monospace; /* Idéal pour des chiffres de calculatrice */
+    font-size: 80px;
+    color: black;
+    text-align: right; /* Aligne les chiffres à droite comme une vraie calculatrice */
+    padding-right: 20px; /* Évite que le texte colle au bord droit */
 }
-.butNum{ 
+
+
+
+/* Style appliqué à tous les boutons du clavier */
+
+#keybrd button {
     border: 2px solid black;
-    table-layout : auto;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 80px; /* Légèrement réduit pour que les symboles ne collent pas aux bords */
+    font-weight: bold; /* Corrigé */
+    cursor: pointer; /* Change le curseur au survol pour indiquer qu'on peut cliquer */
+    transition: background-color 0.2s; /* Ajoute un effet fluide au survol */
+
 }
+
+
+/* Petit effet visuel quand on passe la souris sur un bouton */
+
+#keybrd button:hover {
+    background-color: #222;
+} 
 
